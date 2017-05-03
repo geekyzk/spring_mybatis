@@ -26,7 +26,7 @@ public class Test1
     @Test
     public void test() {
 
-        List<Photo> photos = photoMapper.selectAll();
-        System.out.println(photos.size());
+        Photo photo = photoMapper.selectByPrimaryKey("4fcd1a6d-67f7-4929-8b60-e446c8c015be");
+        System.out.println(photo.getName());
     }
 }
